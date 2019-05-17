@@ -19,38 +19,79 @@
 			return{
 				proId:this.$route.params.Pid,
 				title:"details",
-				products:[
-				{
-				productTitle:"ABCN",
-				image       : require('../assets/images/product1.png'),
-				productId:1
-				},
-				{
-				productTitle:"KARMA",
-				image       : require('../assets/images/product2.png'),
-				productId:2
-				},
-				{
-				productTitle:"Tino",
-				image       : require('../assets/images/product3.png'),
-				productId:3
-				},
-				{
-				productTitle:"EFG",
-				image       : require('../assets/images/product4.png'),
-				productId:4
-				},
-				{
-				productTitle:"MLI",
-				image       : require('../assets/images/product5.png'),
-				productId:5
-				},
-				{
-				productTitle:"Banans",
-				image       : require('../assets/images/product6.png'),
-				productId:6
-				}
-				]
+        products:[
+          {
+            productTitle:"PS4",
+            image       : require('../assets/images/item1.png'),
+            productId:1,
+            price: "R$2.000,00",
+            istallments: {
+              qty: 'x5',
+              value: 'R$25'
+            },
+            is_new: true,
+            discont: '15%',
+          },
+          {
+            productTitle:"X-Box One",
+            image       : require('../assets/images/item2.png'),
+            productId:2,
+            price: "R$2050,00",
+            istallments: {
+              qty: '5',
+              value: 'R$25'
+            },
+            is_new: true,
+            discont: false,
+          },
+          {
+            productTitle:"Nintendo",
+            price: "R$2.000,00",
+            image       : require('../assets/images/item3.png'),
+            productId:3,
+            istallments: {
+              qty: 'x5',
+              value: 'R$25'
+            },
+            discont: '5%',
+          },
+          {
+            productTitle:"Mouse Longitec",
+            image       : require('../assets/images/item4.png'),
+            productId:4,
+            price: "R$450,00",
+            istallments: {
+              qty: 'x5',
+              value: 'R$25'
+            },
+            is_new: false,
+            discont: '10%',
+          },
+          {
+            productTitle:"Teclado",
+            image       : require('../assets/images/item5.png'),
+            productId:5,
+            price: "R$200,00",
+            istallments: {
+              qty: 'x5',
+              value: 'R$25'
+            },
+            is_new: false,
+            discont: false,
+          },
+          {
+            productTitle:"Smart Tv",
+            image       : require('../assets/images/item6.png'),
+            productId:6,
+            price: "R$1.000,00",
+            istallments: {
+              qty: 'x5',
+              value: 'R$25'
+            },
+            is_new: false,
+            discont: false,
+          }
+        ]
 				 
 			}
 		}
