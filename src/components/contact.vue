@@ -19,7 +19,7 @@
 		 					
 		 				</textarea>
 		 			</div>
-		 			<button class="btn btn-primary btn-block">Submit</button>
+		 			<button class="btn btn-primary btn-block">Enviar</button>
 		 		</div>
 		 	</form>
 		 </div>
@@ -27,24 +27,11 @@
 </template>
 <script>
 	export default{
-		name:'blog',
+		name:'cotact',
 		data (){
 			return{
-				title:'contact'
+				title:'Contato'
 			}
 		}
 	}
 </script>
-
-<style scoped>
-.contact form{
-	max-width: 40em;
-	margin: 2em auto;
-}
-.contact form .form-control{
-	margin-bottom: 1em;
-}
-.contact form textarea{
-	min-height: 20em;
-}	
-</style>
