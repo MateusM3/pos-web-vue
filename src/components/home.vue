@@ -6,8 +6,8 @@
         <div class="box">
           <div class="header-prod">
             <div class="bandeiras">
-              <span v-if="data.discont" class="desconto">-{{data.discont}}</span>
-               <span v-if="data.is_new" class="novo">NOVO</span>
+              <span v-show="data.discont" class="desconto">-{{data.discont}}</span>
+               <span v-show="data.is_new" class="novo">NOVO</span>
             </div>
             <div class="thumb">
               <img :src="data.image" class="img-fluid">
@@ -19,7 +19,6 @@
           </div>
           <div class="footer-prod">
             <div class="info-produto">
-              <p>5% de deasconto</p>
               <p class="preco">{{data.price}}</p>
               <p>à vista no boleto</p>
             </div>
@@ -130,20 +129,6 @@ export default {
 }
 .row .produto {
   cursor:pointer;
-}
-
-.produtos .produtos-box {
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  flex-flow: row wrap;
-  -webkit-flex-flow: row wrap;
-}
-
-.produtos .produtos-box.mb-small .produto {
-  margin-bottom: 10px;
 }
 
 .produtos .produto {

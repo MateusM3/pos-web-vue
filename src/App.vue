@@ -9,15 +9,11 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav">
-      
             <li class="nav-item">
-              <router-link class="nav-link" to="/blog">Blog</router-link>
+              <a href="https://drive.google.com/open?id=1cZy3ySYNzudELlKK35yIyONN_cA90h2C" target="_blank" class="nav-link">Atividade 1</a>
             </li>
             <li class="nav-item">
-            <router-link class="nav-link" to="/services">Services</router-link>
-            </li>
-            <li class="nav-item">
-             <router-link class="nav-link" to="/contact">contact</router-link>
+              <router-link class="nav-link" to="/contact">Contato</router-link>
             </li>
           </ul>
         </div>
