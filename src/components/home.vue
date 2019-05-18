@@ -1,5 +1,6 @@
 <template>
   <div class="home">
+    <component-slider></component-slider>
     <h1>{{title}}</h1>
     <div class="row produtos">
       <div @click="goTodetail(data.productId)" class="produto col-12 col-sm-6 col-xl-4"  v-for="(data,index) in products" :key="index">
@@ -31,6 +32,7 @@
 </template>
 
 <script>
+  import Slider from './slider'
 export default {
   name: 'home',
   data () {
@@ -116,7 +118,10 @@ export default {
     let proId=prodId
     this.$router.push({name:'details',params:{Pid:proId}})
   }
-  }
+  },
+  components: {
+    'component-slider': Slider
+  },
 }
 </script>
 
