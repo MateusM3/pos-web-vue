@@ -12,9 +12,6 @@
             <li class="nav-item">
               <a href="https://drive.google.com/open?id=1cZy3ySYNzudELlKK35yIyONN_cA90h2C" target="_blank" class="nav-link">Atividade 1</a>
             </li>
-            <li class="nav-item">
-              <router-link class="nav-link" to="/contact">Contato</router-link>
-            </li>
           </ul>
         </div>
         </div>
